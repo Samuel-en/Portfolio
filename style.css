@@ -11,36 +11,64 @@ body{
 }
 
 #header{
-    width:50%;
-    height:100vh;
+    width:60%;
+    height:80vh;
     background-image: url(images/IMG_4714-PhotoRoom.png);
     background-size:cover ;
     background-position: center;
+    margin-left: auto ;
+    margin-top: 10%;
+    
+    
 }
 
+.container{
+        padding: 10px 5%
+}
+
+/* styling for the navigation bar */
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
+    width: 93%;
     position: absolute;
     top: 0;
 }
-
+/* styling for the size of Samuel logo */
 .logo{
-    width: 100px;
+    width: 80px;
 }
-
+/* styling for the unorder list and the list in the Navbar */
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 5px 8px;
 
 }
-
+/* styling for the text items in the navbar */
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
+    position: relative;
 }
+
+/* styling for the text items to add line effect  */
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position:absolute ;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after{
+    width:100%
+}
+
