@@ -46,14 +46,33 @@
               pariatur non accusantium recusandae.
             </p>
             <div class="tab-titles">
-                <p class="tab-links">Skills</p>
-                <p class="tab-links">Experience</p>
-                <p class="tab-links">Education</p>
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                <p class="tab-links"onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Web Development</span><br>Web app Development</li>
+                    <li><span>DevOps</span><br>Continous Integration Continous Delivery</li>
+                </ul>
+            </div>
+            <div class="tab-contents " id="experience">
+                <ul>
+                    <li><span>2018 - 2021</span><br>Immigration case worker</li>
+                    <li><span>2022 - current</span><br>Dev-10 Software Developer</li>
+
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2018</span><br>Kennesaw State University. BS Anthropology</li>
+                    <li><span>2020</span><br>Georgia Institute of Technology. Cert Fullstack Web Dev</li>
+                </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="" async defer></script>
+    <script src="/script.js" async defer></script>
   </body>
 </html>
