@@ -13,6 +13,8 @@ function opentab(tabName){
     //this is to remove the text content for each header 
         tabcontent.classList.remove("active-tab");    
 }
+
+//this block of code is functionality for the underline and the 
     event.currentTarget.classList.add("acitve-link")
     document.getElementById(tabName).classList.add("active-tab");
 }
