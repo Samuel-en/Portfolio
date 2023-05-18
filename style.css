@@ -63,7 +63,7 @@ nav ul li a::after{
     content:'';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #ff0000;
     position:absolute ;
     left: 0;
     bottom: -6px;
@@ -89,7 +89,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color:  #ff004f;
+    color:  #ff0000;
 }
 
 /* ---------------------about--------------------- */
@@ -136,7 +136,7 @@ nav ul li a:hover::after{
     content:'';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #ff0000;
     position:absolute;
     left:0;
     bottom: -8px;
@@ -180,7 +180,8 @@ nav ul li a:hover::after{
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
-    border-right: 10px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
 }
 .services-list div i{
     font-size: 50px;
@@ -197,4 +198,24 @@ nav ul li a:hover::after{
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
+}
+.services-list div:hover{
+    background: #ff0000;
+    /* transform: translateY and the pixles will assist in moving the services list when the user hovers over it */
+    transform: translateY(-10px);
+}
+
+/* --------------- Portfolio ----------------- */
+
+#portfolio{
+    padding: 50px 0;
+
+}
+
+.work{
+    padding: 50px 0;
+}
+
+.work img{
+    border-radius: 10px;
 }
